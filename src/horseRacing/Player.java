@@ -8,6 +8,11 @@ public class Player {
     int money;
     int moneyFirstTime;
 
+    public Player() {
+        name = askAndSetName();
+        money = moneyForBet();
+    }
+
     public String askAndSetName() {
         System.out.println("Игрок, введите ваше имя");
         return scanner.nextLine();

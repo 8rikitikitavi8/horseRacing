@@ -19,8 +19,6 @@ public class Game {
     }
 
     public void startGame() {
-        player.name = player.askAndSetName();
-        player.money = player.moneyForBet();
         player.moneyFirstTime = player.money;
         while (player.money > 0) {
             horseManager.showHorses();
