@@ -6,10 +6,17 @@ public class Game {
     Scanner scanner = new Scanner(System.in);
     int bet;
     int sumBet;
-    int lapDistance = 800;
-    int numLaps = 3;
-    Player player = new Player();
-    HorseManager horseManager = new HorseManager();
+    int lapDistance;
+    int numLaps;
+    Player player;
+    HorseManager horseManager;
+
+    public Game(int lapDistance, int numLaps, Player player, HorseManager horseManager) {
+        this.lapDistance = lapDistance;
+        this.numLaps = numLaps;
+        this.player = player;
+        this.horseManager = horseManager;
+    }
 
     public void startGame() {
         player.name = player.askAndSetName();

@@ -11,8 +11,10 @@ package horseRacing;
 
 public class Main {
     public static void main(String[] args) {
-        Game game = new Game();
         System.out.println("Приветствуем вас на королевских скачках!!!");
+        Player player = new Player();
+        HorseManager horseManager = new HorseManager();
+        Game game = new Game(800,3,player,horseManager);
         game.startGame();
     }
 }
